@@ -1,0 +1,904 @@
+<style>
+    .craftRow{
+        background-position: center top; 
+        background-size:cover;
+        width:40px;
+        height:40px;
+        text-align:center;
+    }
+</style>
+<body style="background: url(/image/background.jpg) no-repeat center fixed;   -webkit-background-size: cover; background-size: cover;">
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-light" style="font-size: 20px; max-height: 60px; z-index: 10000000;background-color:rgb(0,0,0)">
+  <a class="navbar-brand text-white" href="../index.php">
+    <img src="/image/logo.jpg" width="30" height="30" class="d-inline-block align-top rounded" alt="">
+    <b> Histeria </b>
+  </a>
+  <button class="navbar-toggler  text-white " data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="position: static; left:0; background-color:rgb(0,0,0); padding-right: 90px;padding-left: 10px;">
+      <li class="nav-item" style="margin-right:10px;">
+        <a class="nav-link text-white" href="/../index.php">Accueil</a>
+      </li>
+      <li class="nav-item" style="margin-right:10px;">
+        <a class="nav-link text-white" href="/../../score.php">Scores</a>
+      </li>
+      <li class="nav-item dropdown " style="background-color:rgb(0,0,0);">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownInformation" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownInformation" style="background-color:rgb(0,0,0);">
+          <a class="dropdown-item text-white" style="background-color:rgb(0,0,0);" href="/../../information/more.php">Plus d'infos</a>
+          <a class="dropdown-item text-white" style="background-color:rgb(0,0,0);"href="/../../information/support.php">Support</a>
+          <a class="dropdown-item text-white" style="background-color:rgb(0,0,0);"href="/../../information/craft.php">Craft</a>
+          <a class="dropdown-item text-white" style="background-color:rgb(0,0,0);"href="/../../information/recrutement.php">Recrutements</a>
+          <a class="dropdown-item text-white" style="background-color:rgb(0,0,0);" href="/../../information/reglement.php">Reglement</a>
+          <a class="dropdown-item text-white" style="background-color:rgb(0,0,0);" href="/../../information/grade.php">Grade</a>
+        </div>
+      </li>
+      <li class="nav navbar-nav navbar-right" style="margin-right:10px;">
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="background-color:rgb(0,0,0); padding-left: 10px;">
+      <li class="nav navbar-nav navbar-right" style="margin-right:10px;">
+        <a class="nav-link text-white" href="http://vote.histeria.fr">Vote</a>
+      </li>
+      <li class="nav navbar-nav navbar-right" style="margin-right:10px;">
+         <a class="nav-link text-white" href="http://discord.histeria.fr/">Discord</a>
+      </li>
+      <li class="nav navbar-nav navbar-right" style="margin-right:10px;">
+          <a class="nav-link text-white" href="http://shop.histeria.fr/">Boutique</a>
+      </li>
+      <li class="nav navbar-nav navbar-right" style="margin-right:10px;">
+        <a class="nav-link text-white" href="wiki.html">Wiki</a>
+      </li>
+      <li class="nav navbar-nav navbar-right" style="margin-right:10px;">
+          <a class="nav-link text-white" href="minecraft://?addExternalServer=Histeria V4|play.histeria.fr:19132" title="Ajouter le serveur"><i class="fa fa-gamepad fa-fw" aria-hidden="true"></i></a>
+      </li>
+  </ul>
+  </div>
+</nav>
+	</header>
+    <div class="container h-100" style="margin-top:20px;margin-bottom:20px;">
+        <div class="row" style="min-height:75vh;">
+        	<div class="col-md-12" >
+        		<div class="card">
+  					<div class="card-body">
+                        <div class="alert" role="alert">
+                            <h3 class="text-center alert-heading">Les Crafts</h3>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-md-4">
+                                                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Block en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Casque en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/12.png)" data-toggle="tooltip" data-placement="top" title="Casque en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Bottes en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/18.png)" data-toggle="tooltip" data-placement="top" title="Bottes en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Pioche en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/22.png)" data-toggle="tooltip" data-placement="top" title="Pioche en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Houe en Histerite</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/28.png)" data-toggle="tooltip" data-placement="top" title="Houe en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Pomme en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/38.png)" data-toggle="tooltip" data-placement="top" title="Pomme" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/40.png)" data-toggle="tooltip" data-placement="top" title="Pomme en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Cobble Breaker</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/6.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite Compressé" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/52.png)" data-toggle="tooltip" data-placement="top" title="Cobble Breaker" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Dynamite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/60.png)" data-toggle="tooltip" data-placement="top" title="Dynamite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Terre Fertilisée </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/68.png)" data-toggle="tooltip" data-placement="top" title="Terre" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/68.png)" data-toggle="tooltip" data-placement="top" title="Terre" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/68.png)" data-toggle="tooltip" data-placement="top" title="Terre" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/68.png)" data-toggle="tooltip" data-placement="top" title="Terre" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/68.png)" data-toggle="tooltip" data-placement="top" title="Terre" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/70.png)" data-toggle="tooltip" data-placement="top" title="Terre Fertilisée " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/68.png)" data-toggle="tooltip" data-placement="top" title="Terre" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/68.png)" data-toggle="tooltip" data-placement="top" title="Terre" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/68.png)" data-toggle="tooltip" data-placement="top" title="Terre" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Block de Nocturite Compressé </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Jambières en Nocturite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/84.png)" data-toggle="tooltip" data-placement="top" title="Jambières en Nocturite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Grapin</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/88.png)" data-toggle="tooltip" data-placement="top" title="Hammer" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/90.png)" data-toggle="tooltip" data-placement="top" title="Grapin" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Sac à dos</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/98.png)" data-toggle="tooltip" data-placement="top" title="Sac à dos" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Black Brick</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/112.png)" data-toggle="tooltip" data-placement="top" title="Colorant noir" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/108.png)" data-toggle="tooltip" data-placement="top" title="Black Stone" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Cobblestone Compressée</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td class="craftRow" style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/120.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone Compressée " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/48.png)" data-toggle="tooltip" data-placement="top" title="Cobblestone" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                
+                                <hr>
+                            </div>
+                            <div class="col-md-4">
+                                                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Block en Histerite Compressé</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/6.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite Compressé" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Plastron en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/14.png)" data-toggle="tooltip" data-placement="top" title="Plastron en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Stick en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Hache en Histerite</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/24.png)" data-toggle="tooltip" data-placement="top" title="Hache en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Stick of God</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/30.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Or" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/32.png)" data-toggle="tooltip" data-placement="top" title="Stick of God" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Renforced Obsidian </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/42.png)" data-toggle="tooltip" data-placement="top" title="Obsidienne" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/42.png)" data-toggle="tooltip" data-placement="top" title="Obsidienne" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/42.png)" data-toggle="tooltip" data-placement="top" title="Obsidienne" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/42.png)" data-toggle="tooltip" data-placement="top" title="Obsidienne" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/42.png)" data-toggle="tooltip" data-placement="top" title="Obsidienne" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/44.png)" data-toggle="tooltip" data-placement="top" title="Renforced Obsidian" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/42.png)" data-toggle="tooltip" data-placement="top" title="Obsidienne" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/42.png)" data-toggle="tooltip" data-placement="top" title="Obsidienne" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/42.png)" data-toggle="tooltip" data-placement="top" title="Obsidienne" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Drawer Upgrade</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/56.png)" data-toggle="tooltip" data-placement="top" title="Drawer Upgrade" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Sponger</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/62.png)" data-toggle="tooltip" data-placement="top" title="Seau" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/62.png)" data-toggle="tooltip" data-placement="top" title="Seau" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/62.png)" data-toggle="tooltip" data-placement="top" title="Seau" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/64.png)" data-toggle="tooltip" data-placement="top" title="Sponger" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/62.png)" data-toggle="tooltip" data-placement="top" title="Seau" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/62.png)" data-toggle="tooltip" data-placement="top" title="Seau" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Lingot de Nocturite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/72.png)" data-toggle="tooltip" data-placement="top" title="Graine de Nocturite " type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Casque en Nocturite</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/80.png)" data-toggle="tooltip" data-placement="top" title="Casque en Nocturite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Bottes en Nocturite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/86.png)" data-toggle="tooltip" data-placement="top" title="Bottes en Nocturite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Cave Bloc</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/94.png)" data-toggle="tooltip" data-placement="top" title="Vitre" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/94.png)" data-toggle="tooltip" data-placement="top" title="Vitre" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/94.png)" data-toggle="tooltip" data-placement="top" title="Vitre" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/94.png)" data-toggle="tooltip" data-placement="top" title="Vitre" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/94.png)" data-toggle="tooltip" data-placement="top" title="Vitre" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/92.png)" data-toggle="tooltip" data-placement="top" title="Cave Bloc" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/94.png)" data-toggle="tooltip" data-placement="top" title="Vitre" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/94.png)" data-toggle="tooltip" data-placement="top" title="Vitre" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/94.png)" data-toggle="tooltip" data-placement="top" title="Vitre" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Shuriken</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/100.png)" data-toggle="tooltip" data-placement="top" title="Shuriken" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">White Brick</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px;border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/114.png)" data-toggle="tooltip" data-placement="top" title="Colorant blanc" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/110.png)" data-toggle="tooltip" data-placement="top" title="White Brick" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/106.png)" data-toggle="tooltip" data-placement="top" title="Stone Brick" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                              
+                                <hr>  
+                            </div>
+                            <div class="col-md-4">
+                                                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Histerite Core</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/6.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite Compressé" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/8.png)" data-toggle="tooltip" data-placement="top" title="Histerite Core" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Jambières en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/16.png)" data-toggle="tooltip" data-placement="top" title="Jambières en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Épée en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/20.png)" data-toggle="tooltip" data-placement="top" title="Épée en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Pelle en Histerite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/26.png)" data-toggle="tooltip" data-placement="top" title="Pelle en Histerite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Speed Stick</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/30.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Or" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/36.png)" data-toggle="tooltip" data-placement="top" title="Speed Stick" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Obsi Breaker</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/44.png)" data-toggle="tooltip" data-placement="top" title="Renforced Obsidian" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/2.png)" data-toggle="tooltip" data-placement="top" title="Lingot d'Histerite" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/46.png)" data-toggle="tooltip" data-placement="top" title="Obsi Breaker" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Hang Glider</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/4.png)" data-toggle="tooltip" data-placement="top" title="Block en Histerite" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/58.png)" data-toggle="tooltip" data-placement="top" title="Hang Glider" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Unclaim Finder</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/8.png)" data-toggle="tooltip" data-placement="top" title="Histerite Core" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/66.png)" data-toggle="tooltip" data-placement="top" title="Unclaim Finder" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Block de Nocturite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/76.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/74.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Nocturite " type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Plastron en Nocturite </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/82.png)" data-toggle="tooltip" data-placement="top" title="Plastron en Nocturite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Hammer</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/88.png)" data-toggle="tooltip" data-placement="top" title="Hammer" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/)" data-toggle="tooltip" data-placement="top" title="" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Seedplanter</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/78.png)" data-toggle="tooltip" data-placement="top" title="Block de Nocturite Compressé " type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/96.png)" data-toggle="tooltip" data-placement="top" title="Seedplanter" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/10.png)" data-toggle="tooltip" data-placement="top" title="Stick en Histerite" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Drawer</h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/104.png)" data-toggle="tooltip" data-placement="top" title="Coffre" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/102.png)" data-toggle="tooltip" data-placement="top" title="Drawer" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/54.png)" data-toggle="tooltip" data-placement="top" title="Planche de Chêne " type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                                        <hr>
+                                                                                    <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="text-center">Block d'ascenseur </h4>
+                                                    <p class="text-center"></p>
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-10">
+                                                            <table class="table table-bordered" style="width:250px; border:none;">
+                                                                <tbody style="height:150px;">
+                                                                    <tr style="height:50px;">
+                                                                        <td style="padding:5px; " id='1'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='2'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='3'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='4'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td style="padding:5px; " id='5'><div class="craftRow" style="background-image: url(/image/item/116.png)" data-toggle="tooltip" data-placement="top" title="Redstone" type="button"></div></td><td style="padding:5px; " id='6'><div class="craftRow" style="background-image: url(/image/item/34.png)" data-toggle="tooltip" data-placement="top" title="Lingot de Fer" type="button"></div></td><td  class='craftRow' style="padding:5px;width:50px;border-top:none;border-bottom:none;background-image:url('/image/item/arrow.png')"></td>		
+                                                                            <td style="padding:5px; margin-left:50px" id='10'><div class="craftRow" style="background-image: url(/image/item/118.png)" data-toggle="tooltip" data-placement="top" title="Block d'ascenseur " type="button"></div></td></tr><tr style="height:50px;;"><td style="padding:5px; " id='7'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='8'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td><td style="padding:5px; " id='9'><div class="craftRow" style="background-image: url(/image/item/50.png)" data-toggle="tooltip" data-placement="top" title="Diamant" type="button"></div></td>                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                               
+                                <hr> 
+                            </div>
+                        </div>
+                    </div>
+        		</div>
+            </div>
+        </div>
+    </div>
